@@ -1,0 +1,58 @@
+h1 {
+  font-size: 68px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 4px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+h2 {
+  font-size: 52px;
+  font-family: "Courier New", Courier, monospace;
+  padding-bottom: 8px;
+}
+h3 {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+p {
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 2;
+}
+.hero {
+  text-align: center;
+  line-height: 2;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(166, 226, 229) 0%,
+    rgb(198, 232, 221) 100.2%
+  );
+  margin: 0;
+  padding: 100px 20px;
+}
+.container {
+  max-width: 860px;
+}
+.about-me {
+  padding: 120px 60px;
+}
+@media (max-width: 960px) {
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .about-me {
+    padding: 0;
+    text-align: center;
+  }
+}
