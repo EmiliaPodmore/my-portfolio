@@ -1,11 +1,19 @@
 h1 {
   font-size: 86px;
+  font-family: "Courier New", Courier, monospace;
 }
 h2 {
   font-size: 48px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "VT323", monospace;
 }
 .hero {
   text-align: center;
-  background-color: #f1fff1;
+  line-height: 2;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(166, 226, 229) 0%,
+    rgb(198, 232, 221) 100.2%
+  );
+  margin: 0;
+  padding: 140px 0;
 }
