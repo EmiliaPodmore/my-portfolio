@@ -1,0 +1,11 @@
+h1 {
+  font-size: 86px;
+}
+h2 {
+  font-size: 48px;
+  font-family: "Courier New", Courier, monospace;
+}
+.hero {
+  text-align: center;
+  background-color: #f1fff1;
+}
