@@ -1,3 +1,11 @@
+:root {
+  --primary-colour: #085f63;
+  --secondary-colour: #ffb5b5;
+  --brand-colour: #b2e4d5;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 h1 {
   font-size: 68px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -7,10 +15,11 @@ h1 {
   padding-bottom: 14px;
 }
 .recent {
-  font-size: 28px;
+  font-size: 24px;
   text-decoration: underline;
 }
 h2 {
+  color: var(--primary-color);
   font-size: 52px;
   font-family: "Courier New", Courier, monospace;
   padding-bottom: 8px;
@@ -26,15 +35,36 @@ p {
   line-height: 2;
 }
 .hero {
+  color: azure;
   text-align: center;
   line-height: 2;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(166, 226, 229) 0%,
-    rgb(198, 232, 221) 100.2%
-  );
   margin: 0;
-  padding: 100px 20px;
+  padding: 90px 20px;
+  background: linear-gradient(90deg, #b7f8db, #50a7c2);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.btn-branding {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: var(--brand-colour);
+  border-radius: 4px;
+  color: #ffff;
+  font-size: 18px;
+  margin-top: 30px;
+  padding: 15px 30px;
 }
 .container {
   max-width: 860px;
