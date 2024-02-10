@@ -6,6 +6,10 @@ h1 {
   padding-top: 10px;
   padding-bottom: 14px;
 }
+.recent {
+  font-size: 28px;
+  text-decoration: underline;
+}
 h2 {
   font-size: 52px;
   font-family: "Courier New", Courier, monospace;
@@ -35,7 +39,7 @@ p {
 .container {
   max-width: 860px;
 }
-.about-me {
+.project-description {
   padding: 120px 30px;
 }
 @media (max-width: 960px) {
@@ -51,7 +55,7 @@ p {
   .hero {
     padding: 80px 20px;
   }
-  .about-me {
+  .project-description {
     padding: 0;
     text-align: center;
   }
