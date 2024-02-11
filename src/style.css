@@ -66,6 +66,11 @@ p {
   font-size: 18px;
   margin-top: 30px;
   padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-branding:hover {
+  transform: translateY(3px);
 }
 .container {
   max-width: 860px;
