@@ -3,11 +3,11 @@
   --secondary-colour: #ffb5b5;
   --brand-colour: #b2e4d5;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  --primary-font-family: "Inria Sans", sans-serif;
+  --secondary-font-family: "PT Mono", monospace;
 }
 body {
-  font-family: var(--font-family);
+  font-family: var(--secondary-font-family);
 }
 h1 {
   font-size: 68px;
@@ -24,7 +24,8 @@ h1 {
 h2 {
   color: var(--primary-colour);
   font-size: 52px;
-  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-family: var(--primary-font-family);
   padding-bottom: 8px;
 }
 h3 {
