@@ -56,7 +56,13 @@ p {
     background-position: 0% 50%;
   }
 }
-.btn-branding {
+.container {
+  max-width: 860px;
+}
+.about-section h1 {
+  line-height: 1;
+}
+.btn-hero {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background: rgb(255, 255, 255, 0.1);
@@ -69,11 +75,16 @@ p {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.btn-branding:hover {
+.btn-hero:hover {
   transform: translateY(3px);
 }
-.container {
-  max-width: 860px;
+.btn-branding {
+  color: #ffff;
+  background-color: var(--primary-colour);
+  font-size: 18px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .project-description {
   padding: 120px 30px;
