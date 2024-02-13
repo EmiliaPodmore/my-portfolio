@@ -62,10 +62,10 @@ p {
 .container {
   max-width: 880px;
 }
-.about-section {
-  padding: 120px 130px;
+.content-container {
+  padding: 80px 130px;
 }
-.about-section h1 {
+.content-container h1 {
   line-height: 1;
 }
 .btn-hero {
