@@ -37,6 +37,26 @@ p {
   font-size: 20px;
   line-height: 2;
 }
+.logo {
+  max-width: 150px;
+}
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  line-height: 20px;
+  margin-left: 10px;
+  list-style: none;
+}
+nav a {
+  color: #6d757d;
+  text-decoration: none;
+}
 .hero {
   color: azure;
   text-align: center;
@@ -60,7 +80,7 @@ p {
   }
 }
 .container {
-  max-width: 880px;
+  max-width: 960px;
 }
 .content-container {
   padding: 80px 130px;
