@@ -72,7 +72,6 @@ nav li.active a {
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -88,10 +87,13 @@ nav li.active a {
   max-width: 960px;
 }
 .content-container {
-  padding: 80px 130px;
+  padding: 60px 60px;
 }
 .content-container h1 {
   line-height: 1;
+}
+.project-desciption {
+  padding: 120px 60px;
 }
 .btn-hero {
   color: #ffff;
@@ -115,9 +117,6 @@ nav li.active a {
   padding: 15px 30px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-}
-.project-description {
-  padding: 120px 30px;
 }
 footer {
   margin-bottom: 60px 0;

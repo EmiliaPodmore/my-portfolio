@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find out more about Emilia Podmore, a Front-end developer from London."
+    />
+    <title>About Emilia Podmore</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,6 +19,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/3d92d7c8ae.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,10 +30,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-
-    <title>About Me</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img src="" class="logo d-none d-md-block" alt="Emilia's logo" />
+          <img src="" class="logo d-block d-md-none" alt="Emilia's logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage">Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" title="About Emilia">About</a>
+          </li>
+          <li>
+            <a href="/projects.html" title="Emilia's projects">Projects</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Emilia">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="hero">
       <h1 class="title">About Me</h1>
     </div>
@@ -43,5 +72,47 @@
       </div>
       <h2>Skillset:</h2>
     </div>
+    <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h3>Work Inquiry</h3>
+          <p class="text-muted">Let's get in touch</p>
+        </div>
+        <div>
+          <a href="" class="btn btn-branding mt-3"> Contact me </a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <a
+          href="mailto:emiliapodmore@aol.com"
+          class="email-link"
+          title="Email Emilia"
+          >emiliapodmore@aol.com
+        </a>
+      </div>
+      <div class="social-links d-flex justify-content-center mb-5">
+        <a href="" target="_blank" title="Instagram profile">
+          <i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/emilia-podmore-a144a9205/"
+          target="_blank"
+          title="Linkedin profile"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/EmiliaPodmore"
+          target="_blank"
+          title="Github profile"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <p class="text-center text-muted mt-2">
+        This project is
+        <a href="https://github.com/EmiliaPodmore/my-portfolio" target="_blank"
+          >open-sourced on Github
+        </a>
+      </p>
+    </footer>
   </body>
 </html>
