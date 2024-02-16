@@ -120,6 +120,27 @@ nav li.active a {
 .project-description {
   padding: 120px 30px;
 }
+footer {
+  margin-bottom: 60px 0;
+}
+footer .email-link {
+  color: #6d757d;
+  font-size: 24px;
+  text-decoration: none;
+}
+footer .social-links a {
+  color: var(--brand-colour);
+  background-color: aliceblue;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 8px 20px;
+  margin: 0 20px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: aliceblue;
+  background-color: var(--brand-colour);
+}
 @media (max-width: 960px) {
   h1 {
     font-size: 44px;
