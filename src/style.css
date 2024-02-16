@@ -123,6 +123,14 @@ nav li.active a {
 footer {
   margin-bottom: 60px 0;
 }
+footer .contact-box {
+  background-color: aliceblue;
+  padding: 20px 60px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin: 0;
+}
 footer .email-link {
   color: #6d757d;
   font-size: 24px;
@@ -146,12 +154,18 @@ footer .social-links a:hover {
     font-size: 44px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 32px;
   }
   h3 {
     font-size: 20px;
   }
+  p {
+    font-size: 18px;
+  }
   nav a {
+    font-size: 14px;
+  }
+  .btn {
     font-size: 14px;
   }
   .hero {
