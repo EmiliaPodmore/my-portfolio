@@ -20,7 +20,6 @@ h1 {
 .feature {
   font-size: 24px;
   font-family: var(--default-font-family);
-  text-decoration: underline;
 }
 h2 {
   color: var(--primary-colour);
