@@ -1,18 +1,19 @@
 :root {
-  --primary-colour: #b2e4d5;
+  --primary-colour: #ffb6b9;
   --secondary-colour: #ffb5b5;
   --brand-colour: #b2e4d5;
-  --accent-colour: #f2f9f1;
+  --accent-colour: #fff6f6;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --heading-font: "Capriola", sans-serif;
-  --default-font-family: "Poppins", sans-serif;
+  --heading-font-family: "Capriola", sans-serif;
+  --default-font-family: "Inria Sans", sans-serif;
+  --black: black;
 }
 body {
   font-family: var(--default-font-family);
 }
 h1 {
-  font-size: 68px;
-  font-family: var(--heading-font);
+  font-size: 84px;
+  font-family: var(--heading-font-family);
   letter-spacing: 4px;
   padding-top: 10px;
   padding-bottom: 14px;
@@ -26,10 +27,10 @@ h2 {
 }
 h3 {
   font-size: 32px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: var(--default-font-family);
 }
 p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 2;
 }
 nav {
@@ -68,13 +69,15 @@ nav li.active a {
   max-height: 150px;
 }
 .hero {
-  color: var(--accent-colour);
+  color: #ffff;
   text-align: center;
   line-height: 2;
   margin: 0;
   padding: 90px 20px;
   background: linear-gradient(90deg, #b7f8db, #50a7c2);
   background-size: 400% 400%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   animation: gradient 10s ease infinite;
 }
 @keyframes gradient {
@@ -91,6 +94,7 @@ nav li.active a {
 .btn-hero {
   color: #ffff;
   font-size: 18px;
+  font-family: var(--default-font-family);
   background: rgb(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   margin-top: 30px;
@@ -102,7 +106,7 @@ nav li.active a {
   transform: translateY(3px);
 }
 .feature {
-  font-size: 24px;
+  font-size: 28px;
   font-family: var(--default-font-family);
 }
 .project-card {
@@ -122,7 +126,7 @@ nav li.active a {
   opacity: 0.8;
 }
 button {
-  font-size: 16px;
+  font-size: 18px;
   background-color: var(--brand-colour);
   border: 2px solid black;
   box-shadow: 6px 6px 0 0 black;
@@ -148,16 +152,16 @@ footer .contact-box p {
   margin: 0;
 }
 footer .email-link {
-  color: #000;
-  font-size: 24px;
+  color: var(--black);
+  font-size: 28px;
+  font-family: var(--default-font-family);
   text-decoration: none;
 }
 footer .social-links a {
-  color: var(--brand-colour);
+  color: #ffb6b9;
   background-color: var(--accent-colour);
   font-size: 30px;
   border-radius: 50%;
-
   border: 1px solid black;
   box-shadow: 0 0 0 0 black;
   padding: 8px 20px;
@@ -165,13 +169,16 @@ footer .social-links a {
   transition: all 0.3s ease-in-out;
 }
 footer .social-links a:hover {
-  color: aliceblue;
+  color: #fff6f6;
   background-color: var(--brand-colour);
   transform: translateY(-4px) translateX(-2px);
   box-shadow: 2px 5px 0 0 black;
 }
 .details {
-  font-size: 12px;
+  font-size: 14px;
+}
+.details a {
+  color: var(--brand-colour);
 }
 @media (max-width: 960px) {
   h1 {
