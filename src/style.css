@@ -28,6 +28,7 @@ h2 {
 h3 {
   font-size: 32px;
   font-family: var(--default-font-family);
+  text-align: center;
   opacity: 80%;
 }
 p {
@@ -49,12 +50,13 @@ nav li {
 }
 nav a {
   color: #6d757d;
+  font-size: 18px;
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
 nav a:hover,
 nav li.active a {
-  color: var(--primary-colour);
+  color: var(--black);
   border-bottom: 2px solid var(--brand-colour);
 }
 .container {
@@ -92,20 +94,6 @@ nav li.active a {
     background-position: 0% 50%;
   }
 }
-.btn-hero {
-  color: #ffff;
-  font-size: 18px;
-  font-family: var(--default-font-family);
-  background: rgb(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  margin-top: 30px;
-  padding: 15px 30px;
-  cursor: pointer;
-  transition: all 150ms ease-in-out;
-}
-.btn-hero:hover {
-  transform: translateY(3px);
-}
 .feature {
   font-size: 28px;
   font-family: var(--default-font-family);
@@ -121,10 +109,6 @@ nav li.active a {
 }
 .thumbnail {
   border: solid 1.5px black;
-  transition: all 150ms ease-in-out;
-}
-.thumbnail:hover {
-  opacity: 0.8;
 }
 button {
   font-size: 18px;
@@ -141,7 +125,7 @@ button:hover {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 strong {
-  font-size: 24px;
+  font-size: 28px;
 }
 footer {
   margin-bottom: 60px 0;
@@ -161,6 +145,7 @@ footer .email-link {
   font-family: var(--default-font-family);
   text-decoration: underline;
   text-decoration-color: #ffb6b9;
+  transition: all 150ms ease-in-out;
 }
 footer .email-link:hover {
   text-decoration-color: var(--brand-colour);
