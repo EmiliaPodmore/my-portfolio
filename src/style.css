@@ -20,7 +20,7 @@ h1 {
 }
 h2 {
   color: var(--primary-colour);
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
   font-family: var(--default-font-family);
   padding-bottom: 8px;
@@ -175,7 +175,7 @@ footer .social-links a:hover {
 }
 @media (max-width: 960px) {
   h1 {
-    font-size: 44px;
+    font-size: 40px;
   }
   h2 {
     font-size: 32px;
