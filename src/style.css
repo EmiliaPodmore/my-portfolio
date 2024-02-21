@@ -65,9 +65,6 @@ nav li.active a {
 .content-container {
   padding: 60px 60px;
 }
-.content-container h1 {
-  line-height: 1;
-}
 .logo {
   max-height: 48px;
 }
