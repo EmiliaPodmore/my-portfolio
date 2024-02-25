@@ -1,7 +1,7 @@
 :root {
-  --primary-colour: #ffb6b9;
-  --secondary-colour: #ffb5b5;
   --brand-colour: #b2e4d5;
+  --primary-colour: #ffaaa5;
+  --secondary-colour: #6d757d;
   --accent-colour: #fff6f6;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font-family: "Capriola", sans-serif;
@@ -49,7 +49,7 @@ nav li {
   list-style: none;
 }
 nav a {
-  color: #6d757d;
+  color: var(--secondary-colour);
   font-size: 18px;
   text-decoration: none;
   transition: all 100ms ease-in-out;
@@ -74,7 +74,7 @@ nav li.active a {
   line-height: 2;
   margin: 0;
   padding: 90px 20px;
-  background: linear-gradient(90deg, #b7f8db, #ffb5b5);
+  background: linear-gradient(90deg, #b7f8db, #ffaaa5);
   background-size: 400% 400%;
   border-top: 2px solid var(--black);
   border-bottom: 2px solid var(--black);
@@ -110,8 +110,8 @@ nav li.active a {
 button {
   font-size: 18px;
   background-color: var(--brand-colour);
-  border: 2px solid black;
-  box-shadow: 6px 6px 0 0 black;
+  border: 2px solid var(--black);
+  box-shadow: 6px 6px 0 0 var(--black);
   box-sizing: border-box;
   padding: 15px 30px;
   cursor: pointer;
@@ -130,8 +130,8 @@ footer {
 footer .contact-box {
   background-color: var(--accent-colour);
   padding: 20px 60px;
-  border: solid 1.5px black;
-  box-shadow: 6px 6px 0 0 black;
+  border: solid 1.5px var(--black);
+  box-shadow: 6px 6px 0 0 var(--black);
 }
 footer .contact-box p {
   margin: 0;
@@ -141,19 +141,19 @@ footer .email-link {
   font-size: 28px;
   font-family: var(--default-font-family);
   text-decoration: underline;
-  text-decoration-color: #ffb6b9;
+  text-decoration-color: var(--primary-colour);
   transition: all 150ms ease-in-out;
 }
 footer .email-link:hover {
   text-decoration-color: var(--brand-colour);
 }
 footer .social-links a {
-  color: #ffb6b9;
+  color: var(--primary-colour);
   background-color: var(--accent-colour);
   font-size: 30px;
   border-radius: 50%;
-  border: 1px solid black;
-  box-shadow: 0 0 0 0 black;
+  border: 1px solid var(--black);
+  box-shadow: 0 0 0 0 var(--black);
   padding: 8px 20px;
   margin: 0 20px;
   transition: all 0.3s ease-in-out;
@@ -162,12 +162,17 @@ footer .social-links a:hover {
   color: #fff6f6;
   background-color: var(--brand-colour);
   transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 black;
+  box-shadow: 2px 5px 0 0 var(--black);
 }
 .details {
   font-size: 14px;
 }
 .details a {
+  color: var(--secondary-colour);
+  font-size: 14px;
+  text-decoration: none;
+}
+.details a:hover {
   color: var(--brand-colour);
 }
 @media (max-width: 960px) {
