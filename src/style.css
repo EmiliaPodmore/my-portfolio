@@ -20,10 +20,9 @@ h1 {
 }
 h2 {
   color: var(--primary-colour);
-  font-size: 52px;
+  font-size: 48px;
   font-weight: 700;
   font-family: var(--default-font-family);
-  padding-bottom: 8px;
 }
 h3 {
   font-size: 32px;
@@ -65,6 +64,7 @@ nav li.active a {
 .content-container {
   padding: 60px 60px;
 }
+
 .logo {
   max-height: 48px;
 }
@@ -97,15 +97,48 @@ nav li.active a {
 }
 .project-card {
   background-color: transparent;
-  border: solid 1.5px #0000;
-  box-shadow: 6px 6px 0 0 #0000;
+  border: solid 1.5px var(--black);
+  box-shadow: 6px 6px 0 0 var(--black);
   padding: 0;
+  margin-bottom: 60px;
 }
 .project-desciption {
   padding: 120px 60px;
 }
+.card-body {
+  padding: 10px;
+}
+.left {
+  padding-left: 30px;
+}
+.right {
+  padding-right: 20px;
+}
 .thumbnail {
-  border: solid 1.5px black;
+  max-width: 100%;
+  filter: opacity(100%);
+
+  transition: all 100ms ease-in-out;
+}
+.thumbnail:hover {
+  filter: opacity(80%);
+}
+.project-pic {
+  border: solid 1.5px var(--black);
+  max-width: 100%;
+}
+.profile-pic {
+  display: flex;
+  max-width: 400px;
+  margin-top: 40px;
+  border: solid 1.5px var(--black);
+  margin-left: 20px;
+}
+.bio-container {
+  padding: 60px 30px;
+}
+.column-spacing {
+  padding-right: 40px;
 }
 button {
   font-size: 18px;
@@ -197,6 +230,10 @@ footer .social-links a:hover {
   .hero {
     padding: 80px 20px;
   }
+  .content {
+    text-align: center;
+    padding: 0;
+  }
   .project-description {
     padding: 0;
     text-align: center;
@@ -204,5 +241,9 @@ footer .social-links a:hover {
   .about-section {
     text-align: center;
     padding: 0;
+  }
+  .col-lg-6 img {
+    max-width: 100%;
+    height: auto;
   }
 }
