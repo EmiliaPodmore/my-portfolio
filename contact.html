@@ -35,18 +35,7 @@
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-          <img
-          title="Homepage"
-            src="images/logo.png"
-            class="logo d-none d-md-block"
-            alt="Emilia's logo"
-          />
-          <img
-            src="images/small logo.png"
-            class="logo d-block d-md-none"
-            alt="Emilia's logo"
-          />
-        </a>
+        <p class="text-muted">Emilia Podmore</p>
         <ul>
           <li>
             <a href="/" title="Homepage">Home</a>
@@ -58,27 +47,66 @@
             <a href="/projects.html" title="Emilia's projects">Projects</a>
           </li>
           <li class="active">
-            <a href="/contact.html" title="Contact Emilia">Contacts</a>
+            <a href="/contact.html" title="Contact Emilia">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="hero">
       <h1 class="title">Contact Me</h1>
-    </div>
-    <div class="content-container">
-      <footer class="container">
-        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
-          <div>
-            <strong>Work Inquiry</strong>
-            <p class="text-muted">CV available upon request.</p>
-          </div>
-          <div>
-            <a href="mailto:emiliapodmore@aol.com">
-              <button class="mt-2">Contact me</button></a
-            >
-          </div>
+    </div> 
+      <div class="container mt-5">
+  <div class="form">
+    <div class="form-body">
+      <form>
+        <div class="mb-3">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            placeholder="Your Name"
+          />
         </div>
+        <div class="mb-3">
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="subject">Subject</label>
+          <input
+            class="form-control"
+            type="text"
+            id="subject"
+            placeholder="Subject"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="4"
+            placeholder="Your message..."
+          ></textarea>
+        </div>
+        <div class="text-center mt-4">
+          <button
+            class="mt-6"
+            type="submit"
+          >
+            Submit
+          </button></div>
+      </form>
+    </div>
+  </div>
+      </div>
+<footer class="container">
         <div class="d-flex justify-content-center mb-5">
           <a
             href="mailto:emiliapodmore@aol.com"
@@ -106,7 +134,7 @@
           ></a>
         </div>
         <p class="text-center text-muted mt-2 details">
-           @2024 Emilia Podmore
+           2024 • Emilia Podmore
           <a
             href="https://github.com/EmiliaPodmore/my-portfolio"
             target="_blank"

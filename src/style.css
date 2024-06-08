@@ -31,7 +31,7 @@ h3 {
   opacity: 80%;
 }
 p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
 }
 nav {
@@ -62,9 +62,8 @@ nav li.active a {
   max-width: 960px;
 }
 .content-container {
-  padding: 60px 60px;
+  padding: 0 100px;
 }
-
 .logo {
   max-height: 48px;
 }
@@ -97,13 +96,20 @@ nav li.active a {
 }
 .project-card {
   background-color: transparent;
-  border: solid 1.5px var(--black);
-  box-shadow: 6px 6px 0 0 var(--black);
   padding: 0;
   margin-bottom: 60px;
 }
 .project-desciption {
   padding: 120px 60px;
+}
+.project-pic {
+  border: solid 1.5px var(--black);
+  max-width: 100%;
+  filter: opacity(100%);
+  transition: all 100ms ease-in-out;
+}
+.project-pic:hover {
+  filter: opacity(80%);
 }
 .card-body {
   padding: 10px;
@@ -113,19 +119,6 @@ nav li.active a {
 }
 .right {
   padding-right: 20px;
-}
-.thumbnail {
-  max-width: 100%;
-  filter: opacity(100%);
-
-  transition: all 100ms ease-in-out;
-}
-.thumbnail:hover {
-  filter: opacity(80%);
-}
-.project-pic {
-  border: solid 1.5px var(--black);
-  max-width: 100%;
 }
 .profile-pic {
   display: flex;
@@ -140,10 +133,27 @@ nav li.active a {
 .column-spacing {
   padding-right: 40px;
 }
+.tag-list-container {
+  margin: 0 auto;
+}
+.tag {
+  background-color: var(--brand-colour);
+  border: solid 1.5px var(--black);
+  font-size: 15px;
+  padding: 6px 10px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+.form {
+  background-color: transparent;
+  padding: 40px;
+  margin: 60px;
+}
 button {
   font-size: 18px;
   background-color: var(--brand-colour);
-  border: 2px solid var(--black);
+  border: 1.5px solid var(--black);
   box-shadow: 6px 6px 0 0 var(--black);
   box-sizing: border-box;
   padding: 15px 30px;
@@ -154,9 +164,6 @@ button:hover {
   transform: translateY(10px);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
-strong {
-  font-size: 28px;
-}
 footer {
   margin-bottom: 60px 0;
 }
@@ -164,7 +171,6 @@ footer .contact-box {
   background-color: var(--accent-colour);
   padding: 20px 60px;
   border: solid 1.5px var(--black);
-  box-shadow: 6px 6px 0 0 var(--black);
 }
 footer .contact-box p {
   margin: 0;
