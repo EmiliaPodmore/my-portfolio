@@ -20,7 +20,7 @@ h1 {
 }
 h2 {
   color: var(--primary-colour);
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 700;
   font-family: var(--default-font-family);
 }
@@ -62,7 +62,7 @@ nav li.active a {
   max-width: 960px;
 }
 .content-container {
-  padding: 0 100px;
+  padding: 0 80px;
 }
 .logo {
   max-height: 48px;
@@ -90,7 +90,7 @@ nav li.active a {
     background-position: 0% 50%;
   }
 }
-.feature {
+.sub-heading {
   font-size: 28px;
   font-family: var(--default-font-family);
 }
@@ -103,17 +103,12 @@ nav li.active a {
   padding: 120px 60px;
 }
 .project-pic {
+  margin-top: 12px;
   border: solid 1.5px var(--black);
   max-width: 100%;
 }
 .card-body {
   padding: 10px;
-}
-.left {
-  padding-left: 30px;
-}
-.right {
-  padding-right: 20px;
 }
 .profile-pic {
   display: flex;
@@ -156,13 +151,27 @@ button {
   border: 1.5px solid var(--black);
   box-shadow: 6px 6px 0 0 var(--black);
   box-sizing: border-box;
-  padding: 15px 30px;
+  padding: 14px 24px;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 button:hover {
   transform: translateY(10px);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.launch {
+  font-size: 18px;
+  color: var(--black);
+  background-color: var(--brand-colour);
+  border: 1.5px solid var(--black);
+  box-sizing: border-box;
+  padding: 14px 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.launch:hover {
+  color: var(--black);
+  transition: all 150ms ease-in-out;
 }
 footer {
   margin-bottom: 60px 0;
