@@ -11,6 +11,14 @@
 body {
   font-family: var(--default-font-family);
 }
+.logo {
+  font-size: 24px;
+}
+.logo:hover {
+  color: #6d757d;
+  text-decoration: none;
+  border-bottom: none;
+}
 nav {
   padding: 20px 0;
 }
@@ -35,9 +43,7 @@ nav li.active a {
   color: var(--black);
   border-bottom: 2px solid var(--brand-colour);
 }
-.logo {
-  font-size: 24px;
-}
+
 h1 {
   font-size: 84px;
   font-family: var(--heading-font-family);
@@ -182,7 +188,6 @@ footer .contact-box {
   background-color: var(--accent-colour);
   padding: 20px 60px;
   margin-top: 30px;
-  border: dashed 1.5px #6d757d;
 }
 footer .contact-box p {
   margin: 0;
@@ -226,6 +231,7 @@ footer .social-links a:hover {
 .details a:hover {
   color: var(--brand-colour);
 }
+
 @media (max-width: 960px) {
   h1 {
     font-size: 40px;
