@@ -68,7 +68,6 @@ h3 {
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
-
   animation: typewriter 4s steps(40);
 }
 
@@ -81,7 +80,7 @@ h3 {
   }
 }
 p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
 }
 strong {
