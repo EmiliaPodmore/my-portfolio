@@ -68,7 +68,7 @@ h3 {
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
-  animation: typewriter 4s steps(40);
+  animation: typewriter 6s steps(40);
 }
 
 @keyframes typewriter {
