@@ -40,7 +40,7 @@ nav a {
 }
 nav a:hover,
 nav li.active a {
-  color: var(--black);
+  color: black;
   border-bottom: 2px solid var(--brand-colour);
 }
 
@@ -70,7 +70,6 @@ h3 {
   white-space: nowrap;
   animation: typewriter 5s steps(80);
 }
-
 @keyframes typewriter {
   0% {
     width: 0;
@@ -89,8 +88,8 @@ strong {
 button {
   font-size: 18px;
   background-color: var(--brand-colour);
-  border: 1.5px solid var(--black);
-  box-shadow: 6px 6px 0 0 var(--black);
+  border: 1.5px solid black;
+  box-shadow: 6px 6px 0 0 black;
   box-sizing: border-box;
   padding: 14px 24px;
   cursor: pointer;
@@ -114,8 +113,8 @@ button:hover {
   padding: 90px 20px;
   background: linear-gradient(90deg, #b7f8db, #ffaaa5);
   background-size: 400% 400%;
-  border-top: 2px solid var(--black);
-  border-bottom: 2px solid var(--black);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   animation: gradient 10s ease infinite;
 }
 @keyframes gradient {
@@ -136,9 +135,9 @@ button:hover {
 .btn {
   display: inline-block;
   font-size: 18px;
-  color: var(--black);
+  color: black;
   background-color: var(--brand-colour);
-  border: 1.5px solid var(--black);
+  border: 1.5px solid black;
   box-sizing: border-box;
   padding: 14px 24px;
   border-radius: 0px;
@@ -154,7 +153,7 @@ button:hover {
 }
 .btn::before {
   content: "";
-  background-color: var(--black);
+  background-color: black;
   position: absolute;
   left: 0;
   top: 0;
@@ -177,7 +176,7 @@ button:hover {
 }
 .project-pic {
   margin-top: 18px;
-  border: solid 1.5px var(--black);
+  border: solid 1.5px black;
   max-width: 100%;
 }
 .card-body {
@@ -187,7 +186,7 @@ button:hover {
   display: flex;
   max-width: 400px;
   margin-top: 40px;
-  border: solid 1.5px var(--black);
+  border: solid 1.5px black;
   margin-left: 20px;
 }
 .bio-container {
@@ -201,7 +200,7 @@ button:hover {
 }
 .tag {
   background-color: var(--brand-colour);
-  border: solid 1.5px var(--black);
+  border: solid 1.5px black;
   font-size: 15px;
   padding: 6px 10px;
   display: inline-block;
@@ -211,7 +210,7 @@ button:hover {
 }
 .tag:hover {
   color: #ffff;
-  background-color: var(--black);
+  background-color: black;
 }
 .form {
   background-color: transparent;
@@ -228,7 +227,7 @@ footer .contact-box p {
   margin: 0;
 }
 footer .email-link {
-  color: var(--black);
+  color: black;
   font-size: 28px;
   font-family: var(--default-font-family);
   text-decoration: underline;
@@ -243,8 +242,8 @@ footer .social-links a {
   background-color: var(--accent-colour);
   font-size: 30px;
   border-radius: 50%;
-  border: 1px solid var(--black);
-  box-shadow: 0 0 0 0 var(--black);
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
   padding: 8px 20px;
   margin: 0 20px;
   transition: all 0.3s ease-in-out;
@@ -253,7 +252,7 @@ footer .social-links a:hover {
   color: #fff6f6;
   background-color: var(--brand-colour);
   transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 var(--black);
+  box-shadow: 2px 5px 0 0 black;
 }
 .details {
   font-size: 14px;
