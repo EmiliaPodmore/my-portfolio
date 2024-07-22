@@ -266,15 +266,24 @@ footer .social-links a:hover {
   color: var(--brand-colour);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 940px) {
+  .logo {
+    font-size: 20px;
+  }
+  nav a {
+    font-size: 12px;
+  }
   h1 {
-    font-size: 40px;
+    font-size: 44px;
   }
   .feature {
-    font-size: 22px;
+    font-size: 20px;
+  }
+  .sub-heading {
+    font-size: 20px;
   }
   h2 {
-    font-size: 34px;
+    font-size: 38px;
     text-align: center;
   }
   h3 {
@@ -282,9 +291,6 @@ footer .social-links a:hover {
   }
   p {
     font-size: 18px;
-  }
-  nav a {
-    font-size: 14px;
   }
   button {
     font-size: 14px;
