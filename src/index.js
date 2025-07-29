@@ -10,4 +10,4 @@ setInterval(() => {
   if (charIndex >= text.length) {
     charIndex = 0;
   }
-}, 100);
+}, 80);
