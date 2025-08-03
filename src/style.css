@@ -311,7 +311,7 @@ footer .social-links a:hover {
     padding: 0;
   }
   .profile-pic {
-    margin-left: 80px;
+    max-width: 80%;
   }
   .col-lg-6 img {
     max-width: 100%;
