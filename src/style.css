@@ -1,21 +1,23 @@
 :root {
-  --brand-colour: #baf1e0;
-  --primary-colour: #ffaaa5;
-  --secondary-colour: #6d757d;
-  --accent-colour: #fff6f6;
+  --colour-brand: #baf1e0;
+  --colour-primary: #ffaaa5;
+  --colour-secondary: #6d757d;
+  --colour-accent: #fff6f6;
+  --colour-text: #212529;
+  --colour-background: #ffff;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --heading-font-family: "Capriola", sans-serif;
-  --default-font-family: "Inria Sans", sans-serif;
-  --black: black;
+  --font-family-heading: "Capriola", sans-serif;
+  --font-family-body: "Inria Sans", sans-serif;
 }
 body {
-  font-family: var(--default-font-family);
+  background-color: var(--colour-background);
+  font-family: var(--font-family-body);
 }
 .logo {
   font-size: 24px;
 }
 .logo:hover {
-  color: #6d757d;
+  color: var(--colour-primary);
   text-decoration: none;
   border-bottom: none;
 }
@@ -33,33 +35,33 @@ nav li {
   list-style: none;
 }
 nav a {
-  color: var(--secondary-colour);
-  font-size: 18px;
+  color: var(--colour-secondary);
+  font-size: 22px;
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
 nav a:hover,
 nav li.active a {
-  color: black;
-  border-bottom: 2px solid var(--brand-colour);
+  color: var(--colour-text);
+  border-bottom: 2px solid var(--colour-brand);
 }
 
 h1 {
   font-size: 84px;
-  font-family: var(--heading-font-family);
+  font-family: var(--font-family-heading);
   letter-spacing: 4px;
   padding-top: 10px;
   padding-bottom: 14px;
 }
 h2 {
-  color: var(--primary-colour);
+  color: var(--colour-primary);
   font-size: 46px;
   font-weight: 700;
-  font-family: var(--default-font-family);
+  font-family: var(--font-family-body);
 }
 h3 {
   font-size: 32px;
-  font-family: var(--default-font-family);
+  font-family: var(--font-family-body);
   text-align: center;
   justify-content: center;
   display: flex;
@@ -79,7 +81,7 @@ h3 {
   }
 }
 p {
-  font-size: 18px;
+  font-size: 18.5px;
   line-height: 2;
 }
 strong {
@@ -87,9 +89,9 @@ strong {
 }
 button {
   font-size: 18px;
-  background-color: var(--brand-colour);
-  border: 1.5px solid black;
-  box-shadow: 6px 6px 0 0 black;
+  background-color: var(--colour-brand);
+  border: 1.5px solid var(--colour-text);
+  box-shadow: 6px 6px 0 0 var(--colour-text);
   box-sizing: border-box;
   padding: 14px 24px;
   cursor: pointer;
@@ -106,15 +108,15 @@ button:hover {
   padding: 0 80px;
 }
 .hero {
-  color: #ffff;
+  color: var(--colour-background);
   text-align: center;
   line-height: 2;
   margin: 0;
   padding: 90px 20px;
   background: linear-gradient(90deg, #b7f8db, #ffaaa5);
   background-size: 400% 400%;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid var(--colour-text);
+  border-bottom: 2px solid var(--colour-text);
   animation: gradient 10s ease infinite;
 }
 @keyframes gradient {
@@ -130,14 +132,14 @@ button:hover {
 }
 .sub-heading {
   font-size: 28px;
-  font-family: var(--default-font-family);
+  font-family: var(--font-family-body);
 }
 .btn {
   display: inline-block;
   font-size: 18px;
-  color: black;
-  background-color: var(--brand-colour);
-  border: 1.5px solid black;
+  color: var(--colour-text);
+  background-color: var(--colour-brand);
+  border: 1.5px solid var(--colour-text);
   box-sizing: border-box;
   padding: 14px 24px;
   border-radius: 0px;
@@ -149,11 +151,11 @@ button:hover {
   z-index: 1;
 }
 .btn:hover {
-  color: #ffff;
+  color: var(--colour-background);
 }
 .btn::before {
   content: "";
-  background-color: black;
+  background-color: var(--colour-text);
   position: absolute;
   left: 0;
   top: 0;
@@ -176,7 +178,7 @@ button:hover {
 }
 .project-pic {
   margin-top: 18px;
-  border: solid 1.5px black;
+  border: solid 1.5px var(--colour-text);
   max-width: 100%;
 }
 .card-body {
@@ -186,8 +188,9 @@ button:hover {
   display: flex;
   max-width: 400px;
   margin-top: 40px;
-  border: solid 1.5px black;
   margin-left: 20px;
+  margin-bottom: 30px;
+  border: solid 1.5px var(--colour-text);
 }
 .bio-container {
   padding: 60px 30px;
@@ -195,13 +198,16 @@ button:hover {
 .column-spacing {
   padding-right: 40px;
 }
+.download-btn {
+  margin-left: 140px;
+}
 .tag-list-container {
   margin: 0 auto;
 }
 .tag {
-  background-color: var(--brand-colour);
-  border: solid 1.5px black;
-  font-size: 15px;
+  background-color: var(--colour-brand);
+  border: solid 1.5px var(--colour-text);
+  font-size: 16px;
   padding: 6px 10px;
   display: inline-block;
   text-align: center;
@@ -209,8 +215,8 @@ button:hover {
   transition: all 150ms ease-in-out;
 }
 .tag:hover {
-  color: #ffff;
-  background-color: black;
+  color: var(--colour-background);
+  background-color: var(--colour-text);
 }
 .form {
   background-color: transparent;
@@ -219,7 +225,7 @@ button:hover {
   border-bottom: #6d757d dashed 1px;
 }
 footer .contact-box {
-  background-color: var(--accent-colour);
+  background-color: var(--colour-accent);
   padding: 20px 60px;
   margin-top: 30px;
 }
@@ -227,43 +233,43 @@ footer .contact-box p {
   margin: 0;
 }
 footer .email-link {
-  color: black;
+  color: var(--colour-text);
   font-size: 28px;
-  font-family: var(--default-font-family);
+  font-family: var(--font-family-body);
   text-decoration: underline;
-  text-decoration-color: var(--primary-colour);
+  text-decoration-color: var(--colour-primary);
   transition: all 150ms ease-in-out;
 }
 footer .email-link:hover {
-  text-decoration-color: var(--brand-colour);
+  text-decoration-color: var(--colour-brand);
 }
 footer .social-links a {
-  color: var(--primary-colour);
-  background-color: var(--accent-colour);
+  color: var(--colour-primary);
+  background-color: var(--colour-accent);
   font-size: 30px;
   border-radius: 50%;
-  border: 1px solid black;
-  box-shadow: 0 0 0 0 black;
+  border: 1px solid var(--colour-text);
+  box-shadow: 0 0 0 0 var(--colour-text);
   padding: 8px 20px;
   margin: 0 20px;
   transition: all 0.3s ease-in-out;
 }
 footer .social-links a:hover {
-  color: #fff6f6;
-  background-color: var(--brand-colour);
+  color: var(--colour-accent);
+  background-color: var(--colour-brand);
   transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 black;
+  box-shadow: 2px 5px 0 0 var(--colour-text);
 }
 .details {
   font-size: 14px;
 }
 .details a {
-  color: var(--secondary-colour);
+  color: var(--colour-secondary);
   font-size: 14px;
   text-decoration: none;
 }
 .details a:hover {
-  color: var(--brand-colour);
+  color: var(--colour-brand);
 }
 
 @media (max-width: 940px) {
@@ -287,10 +293,10 @@ footer .social-links a:hover {
     text-align: center;
   }
   h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
   button {
     font-size: 14px;
@@ -316,5 +322,8 @@ footer .social-links a:hover {
   .col-lg-6 img {
     max-width: 100%;
     height: auto;
+  }
+  .download-btn {
+    display: none;
   }
 }
