@@ -20,12 +20,13 @@ body {
   color: var(--colour-primary);
   text-decoration: none;
   border-bottom: none;
+  transition: all 150s ease-in-out;
 }
 nav {
   padding: 20px 0;
 }
 nav ul {
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
 }
 nav li {
@@ -36,9 +37,8 @@ nav li {
 }
 nav a {
   color: var(--colour-secondary);
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
-  transition: all 100ms ease-in-out;
 }
 nav a:hover,
 nav li.active a {
@@ -52,6 +52,13 @@ h1 {
   letter-spacing: 4px;
   padding-top: 10px;
   padding-bottom: 14px;
+}
+h1 a {
+  color: var(--colour-secondary);
+  text-decoration: none;
+}
+h1 a:hover {
+  color: var(--colour-text);
 }
 h2 {
   color: var(--colour-primary);
@@ -217,12 +224,6 @@ button:hover {
 .tag:hover {
   color: var(--colour-background);
   background-color: var(--colour-text);
-}
-.form {
-  background-color: transparent;
-  padding: 40px;
-  margin: 60px;
-  border-bottom: #6d757d dashed 1px;
 }
 footer .contact-box {
   background-color: var(--colour-accent);
