@@ -15,7 +15,7 @@ body {
 }
 .logo {
   color: var(--colour-secondary);
-  font-size: 24px;
+  font-size: 26px;
 }
 .logo:hover {
   color: var(--colour-primary);
@@ -200,7 +200,7 @@ button:hover {
   margin-left: 20px;
   margin-bottom: 30px;
   border: solid 1.5px var(--colour-text);
-  transition: transform 0.4s ease-in-out;
+  transition: ease-in-out 150ms;
 }
 .profile-pic:hover {
   transform: rotateZ(4deg) scale(1);
