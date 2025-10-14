@@ -224,7 +224,6 @@ button:hover {
   padding: 6px 10px;
   display: inline-block;
   text-align: center;
-  text-transform: uppercase;
   transition: all 150ms ease-in-out;
 }
 .tag:hover {
