@@ -182,8 +182,11 @@ button:hover {
   padding: 0;
   margin-bottom: 60px;
 }
-.project-desciption {
-  padding: 120px 60px;
+.project-info {
+  padding: 0 10px;
+}
+.project-info p {
+  font-size: 19px;
 }
 .project-pic {
   margin-top: 18px;
