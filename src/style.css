@@ -188,10 +188,16 @@ button:hover {
 .project-info p {
   font-size: 19px;
 }
-.project-pic {
+.project-pic,
+.featured-pic {
   margin-top: 18px;
   border: solid 1.5px var(--colour-text);
   max-width: 100%;
+  transition: ease-in-out 150ms;
+}
+.featured-pic:hover {
+  transform: scale(1.04);
+  box-shadow: 6px 6px 0 0 var(--colour-primary);
 }
 .card-body {
   padding: 10px;
